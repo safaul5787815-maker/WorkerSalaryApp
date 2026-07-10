@@ -1,0 +1,68 @@
+No scripts found for hook "before_build".
+No scripts found for hook "before_prepare".
+Checking for saved platforms that haven't been added to the project
+Loaded API for android project /data/data/com.termux/files/home/WorkerAttendance/WorkerSalaryApp/platforms/android/cordova/Api.js
+Checking for saved plugins that haven't been added to the project
+Generating platform-specific config.xml from defaults for android at /data/data/com.termux/files/home/WorkerAttendance/WorkerSalaryApp/platforms/android/app/src/main/res/xml/config.xml
+Merging project's config.xml into platform-specific android config.xml
+[Gradle Properties] Preparing Configuration
+[Gradle Properties] Appending default configuration properties
+[Gradle Properties] Appending custom configuration properties
+[Gradle Properties] Updating and Saving File
+Merging and updating files from [www, platforms/android/platform_www] to platforms/android/app/src/main/assets/www
+Wrote out android application name "Worker Salary App" to /data/data/com.termux/files/home/WorkerAttendance/WorkerSalaryApp/platforms/android/app/src/main/res/values/cdv_strings.xml
+The Android Splash Screen background color was set to: Default
+The "AndroidWindowSplashScreenAnimatedIcon" is undefined. Cordova's default will be used.
+The "AndroidWindowSplashScreenBrandingImage" is undefined. Cordova's default will be used.
+Wrote out Android application SplashScreen Icon Color to /data/data/com.termux/files/home/WorkerAttendance/WorkerSalaryApp/platforms/android/app/src/main/res/values/cdv_colors.xml
+Wrote out Android application themes to /data/data/com.termux/files/home/WorkerAttendance/WorkerSalaryApp/platforms/android/app/src/main/res/values/cdv_themes.xml
+[Cordova Gradle Config] Setting "PACKAGE_NAMESPACE" to com.workersalary.app
+[Cordova Gradle Config] Saving File
+android-versionCode not found in config.xml. Generating a code based on version in config.xml (1.0.0): 10000
+This app does not have launcher icons defined
+This app does not have additional resource files defined
+Prepared android project successfully
+No scripts found for hook "after_prepare".
+No scripts found for hook "before_compile".
+Checking Java JDK and Android SDK versions
+ANDROID_HOME=undefined (recommended setting)
+ANDROID_SDK_ROOT=undefined (DEPRECATED)
+Using Android SDK: /data/data/com.termux/files/home/android-sdk
+Using Gradle: 8.14.2
+Starting a Gradle Daemon, 1 incompatible Daemon could not be reused, use --status for details
+Warning: Unable to set daemon's environment variables to match the client because: 
+  There is no native integration with this operating environment.
+  If the daemon was started with a significantly different environment from the client, and your build 
+  relies on environment variables, you may experience unexpected behavior.
+> Task :wrapper UP-TO-DATE
+
+BUILD SUCCESSFUL in 11s
+1 actionable task: 1 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.1/userguide/configuration_cache_enabling.html
+Subproject Path: CordovaLib
+Subproject Path: app
+Running Gradle Build: /data/data/com.termux/files/home/WorkerAttendance/WorkerSalaryApp/platforms/android/tools/gradlew cdvBuildDebug
+Starting a Gradle Daemon, 1 incompatible Daemon could not be reused, use --status for details
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Script '/data/data/com.termux/files/home/WorkerAttendance/WorkerSalaryApp/platforms/android/CordovaLib/cordova.gradle' line: 79
+
+* What went wrong:
+A problem occurred evaluating script.
+> No usable Android build tools found. Highest 36.x installed version is 35.0.0; Recommended version is 36.0.0.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 14s
+Command failed with exit code 1: /data/data/com.termux/files/home/WorkerAttendance/WorkerSalaryApp/platforms/android/tools/gradlew cdvBuildDebug
+Error: Command failed with exit code 1: /data/data/com.termux/files/home/WorkerAttendance/WorkerSalaryApp/platforms/android/tools/gradlew cdvBuildDebug
+    at makeError (/data/data/com.termux/files/home/WorkerAttendance/WorkerSalaryApp/node_modules/execa/lib/error.js:60:11)
+    at handlePromise (/data/data/com.termux/files/home/WorkerAttendance/WorkerSalaryApp/node_modules/execa/index.js:118:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ProjectBuilder.build (/data/data/com.termux/files/home/WorkerAttendance/WorkerSalaryApp/node_modules/cordova-android/lib/builders/ProjectBuilder.js:369:20)

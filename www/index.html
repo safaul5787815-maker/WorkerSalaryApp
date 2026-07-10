@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Worker Salary App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<h2>Worker Salary App</h2>
+
+Worker Name:
+<input id="name"><br><br>
+
+Present Days:
+<input id="days" type="number"><br><br>
+
+OT Hours:
+<input id="ot" type="number"><br><br>
+
+Daily Salary:
+<input id="rate" type="number"><br><br>
+
+<button onclick="calculate()">Calculate Salary</button>
+
+<h3 id="result"></h3>
+
+<script>
+function calculate(){
+
+let name = document.getElementById("name").value;
+let days = Number(document.getElementById("days").value);
+let ot = Number(document.getElementById("ot").value);
+let rate = Number(document.getElementById("rate").value);
+
+let salary = (days * rate) + (ot * 50);
+
+document.getElementById("result").innerHTML =
+"Worker: " + name + "<br>Salary: ₹" + salary;
+
+}
+</script>
+
+</body>
+</html>
