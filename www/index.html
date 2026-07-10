@@ -41,7 +41,9 @@ let days = Number(document.getElementById("days").value);
 let ot = Number(document.getElementById("ot").value);
 let rate = Number(document.getElementById("rate").value);
 
-let salary = (days * rate) + (ot * 50);
+let hourly_rate = rate / 8;
+let ot_amount = ot * hourly_rate;
+let salary = (days * rate) + ot_amount;
 
 document.getElementById("result").innerHTML =
 "Worker: " + name + "<br>Salary: ₹" + salary;
